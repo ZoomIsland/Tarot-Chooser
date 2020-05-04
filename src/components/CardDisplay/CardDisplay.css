@@ -1,0 +1,171 @@
+.cardName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-image: none;
+    border-radius: 15px;
+    width: 225px;
+    overflow: hidden;
+}
+
+@keyframes textAppear {
+    0% {opacity: 0}
+    100% {opacity: 100}
+}
+
+.actualCardName h1 {
+    background-image: none;
+    text-align: center;
+    color: #D4AF37;
+    text-shadow: 5px 0px 5px rgba(0,0,0,0.9),
+                -5px 0px 5px rgba(0,0,0,0.9);
+    animation-name: textAppear;
+    animation-duration: 4s;
+    animation-delay: calc(var(--animationOrder) * 1s + 2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.actualCardName {
+    background-image: none;
+    text-align: center;
+}
+
+/* rework below code */
+.displayCurtain {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    align-items: center;
+    background-image: none;
+    width: 165px;
+    height: 290px;
+    overflow: hidden;
+  }
+
+  @keyframes bottomPulldown {
+    0% {height: 290px}
+    100% {height: 0px}
+}
+
+  .bottom-panel {
+      width: 165px;
+      height: 290px;
+      position: absolute;
+      z-index: 10;
+      align-self: flex-end;
+      animation-name: bottomPulldown;
+      animation-duration: 3s;
+      animation-delay: calc(var(--animationOrder) * 1s);
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; 
+  }
+
+  @keyframes leftPullright {
+      0% {transform: translateX(0%)}
+      100% {transform: translateX(-100%)}
+  }
+  
+  .left-panel {
+    width:100px;
+    height: 300px;
+    margin-left: -50px;
+    float: left;
+    z-index: 5;
+    position: absolute;
+    border-right: 3px solid #D4AF37;
+    box-shadow: 1px 0px 5px black,
+                inset -1px 0px 5px black;
+    animation-name: leftPullright;
+    animation-delay: calc(var(--animationOrder) * 1s + 2s);
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards
+
+  }
+
+  @keyframes rightPullleft {
+    0% {transform: translateX(0%)}
+    100% {transform: translateX(100%)}
+}
+
+  .right-panel {
+    width: 100px;
+    height: 310px;
+    float: right;
+    margin-left: 50px;
+    z-index: 5;
+    position: absolute;
+    border-left: 3px solid #D4AF37;
+    box-shadow: -1px 0px 3px black,
+                inset 1px 0px 3px black;
+    animation-name: rightPullleft;
+    animation-delay: calc(var(--animationOrder) * 1s + 2s);
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards
+  }
+  
+  .content {
+    background-image: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+  }
+
+.descriptorBox {
+    width: 165px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255,255,255,0.65);
+    opacity: 0;
+    z-index: 2;
+    border-radius: 15px;
+    position: absolute;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 500ms;
+}
+
+.descriptorBox p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: transparent;
+    color: #D4AF37;
+    text-shadow: 1px 1px 2px black,
+                -1px -1px 2px black,
+                -1px 1px 2px black,
+                1px -1px 2px black;
+    width: 90%;
+    padding: 0px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0px 0px;
+    font-stretch: condensed;
+    z-index: 2;
+    
+}
+
+.descriptorBox:hover{
+    opacity: 1;
+    transition: 500ms;
+}
+
+.content img {
+    background-image: none;
+    width: 165px;
+    height: 290px;
+    position: absolute;
+    margin-left: -84px;
+    border-radius: 15px;
+    z-index: 1;
+}

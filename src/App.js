@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import unicursalfavicon from './components/resources/unicursalfavicon.jpeg'
+import SearchForm from './components/SearchForm/SearchForm'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mainLogo">
+        <img className="hexigram" src={unicursalfavicon} alt="main" />
+      </div>
+      <div className="ReadingSection">
+        <div className="introText">
+          <h1>Welcome to today's reading!</h1>
+        </div>
+        <div className="form">
+          <SearchForm />
+        </div>
+        <div className="madeBy">
+          Made by Zach Milan
+        </div>
+      </div>
     </div>
   );
 }

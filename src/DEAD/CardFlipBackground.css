@@ -1,0 +1,75 @@
+.BackgroundArea {
+    overflow:hidden;
+    height: 200px;
+    width: 105vw;
+    margin-left: -50px;
+    margin-top: 15px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiles {
+    background-color: transparent;
+    display: flex;
+    width: 150vw;
+    flex-wrap: wrap;
+    transform: rotate(20deg);
+    perspective: 1000px;
+}
+
+
+.tileCard {
+    margin: 7px;
+    height: 65px;
+    width: 45px;
+}
+
+.tileCard-inner {
+    position: relative;
+    height: 65px;
+    width: 45px;
+    transition: transform 0.35s;
+    transform-style: preserve-3d;
+}
+
+.tileCard:hover .tileCard-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    height: 65px;
+    width: 45px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.75);
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: rgb(190, 160, 78);
+}
+
+.tiles :nth-child(17n) :nth-child(1) :nth-child(1) {
+    background-color: rgb(142, 122, 233);
+}
+.tiles :nth-child(21n+3) :nth-child(1) :nth-child(1) {
+    background-color: rgb(109, 218, 136);
+}
+.tiles :nth-child(18n+2) :nth-child(1) :nth-child(1) {
+    background-color: rgb(235, 146, 230);
+}
+.tiles :nth-child(35n+17) :nth-child(1) :nth-child(1) {
+    background-color: rgb(95, 92, 241);
+}
+.tiles :nth-child(26n+14) :nth-child(1) :nth-child(1) {
+    background-color: rgb(245, 104, 104);
+}
+
+.back {
+    background-color: rgba(255,255,255);
+    transform: rotateY(180deg);
+}

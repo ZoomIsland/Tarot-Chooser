@@ -1,0 +1,193 @@
+.cardAmountDisplay {
+    display: flex;
+    position: relative;
+}
+
+.FrontFacing {
+    position: absolute;
+    background-image: none;
+    background-color: white;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    margin: 5px;
+    height: 165px;
+    width: 115px;
+    transition: 750ms;
+    transform-style: preserve-3d;
+    box-shadow: -8px 2px 8px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.cardFront {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    transition: 750ms;
+}
+
+.borderbox {
+    background-image: none;
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    margin-left: 1px;
+    pointer-events: none;
+}
+
+.cardFront h1 {
+    background-image: none;
+    font-size: 80px;
+    background-color: inherit;
+    color: #D4AF37;
+    text-shadow: 1px 0px rgb(0,0,0),
+                 -1px 0px rgb(0,0,0),
+                 0px 1px rgb(0,0,0),
+                 0px -1px rgb(0,0,0);
+    margin-top: 15px;
+    margin-bottom: 0px;
+    pointer-events: none;
+}
+
+.cardFront p {
+    background-image: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: #D4AF37;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.cardFront, .cardBack {
+    background-image: none;
+    backface-visibility: hidden;
+}
+
+.cardBack {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    transition: 750ms;
+    transform: rotateY(-180deg);
+}
+
+.FrontFacing:nth-child(1) {
+    margin-left: -280px;
+    z-index: 1;
+}
+
+.FrontFacing:nth-child(2) {
+    margin-left: -240px;
+    z-index: 2;
+}
+
+.FrontFacing:nth-child(3) {
+    margin-left: -200px;
+    z-index: 3;
+}
+
+.FrontFacing:nth-child(4) {
+    margin-left: -160px;
+    z-index: 4;
+}
+
+.FrontFacing:nth-child(5) {
+    margin-left: -120px;
+    z-index: 5;
+}
+
+.FrontFacing:nth-child(6) {
+    margin-left: -80px;
+    z-index: 6;
+}
+
+.FrontFacing:nth-child(7) {
+    margin-left: -40px;
+    z-index: 7;
+}
+
+.FrontFacing:nth-child(8) {
+    margin-left: 0px;
+    z-index: 8;
+}
+
+.FrontFacing:nth-child(9) {
+    margin-left: 40px;
+    z-index: 9;
+}
+
+.FrontFacing:nth-child(10) {
+    margin-left: 80px;
+    z-index: 10;
+}
+
+.BackFacing {
+    position: absolute;
+    height: 165px;
+    width: 115px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    transform: rotateY(-180deg);
+    transition: 750ms;
+    transform-style: preserve-3d;
+    box-shadow: -8px 2px 8px rgba(0,0,0,.5);
+    background-image: none;
+}
+
+.BackFacing:nth-child(2) {
+    margin-left: -140px;
+    z-index: 9;
+}
+
+.BackFacing:nth-child(3) {
+    margin-left: -100px;
+    z-index: 8;
+}
+
+.BackFacing:nth-child(4) {
+    margin-left: -60px;
+    z-index: 7;
+}
+
+.BackFacing:nth-child(5) {
+    margin-left: -20px;
+    z-index: 6;
+}
+
+.BackFacing:nth-child(6) {
+    margin-left: 20px;
+    z-index: 5;
+}
+
+.BackFacing:nth-child(7) {
+    margin-left: 60px;
+    z-index: 4;
+}
+
+.BackFacing:nth-child(8) {
+    margin-left: 100px;
+    z-index: 3;
+}
+
+.BackFacing:nth-child(9) {
+    margin-left: 140px;
+    z-index: 2;
+}
+
+.BackFacing:nth-child(10) {
+    margin-left: 180px;
+    z-index: 1;
+}
+
+

@@ -1,38 +1,112 @@
-.App {
+* {
+  /* background-image: url('./components/resources/purplevelvet.jpg');
+  background-repeat: repeat; */
+  background-color: rgb(85, 26, 122);
+  color: #F4E5FA;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  color: #D4AF37;
   text-align: center;
+  text-shadow:  1px 1px 2px rgba(0,0,0,1),
+                  -1px -1px 2px rgba(0,0,0,1);
+}
+.mainLogo {
+  width: 100%;
+  height: 120px;
+  background-image: none;
+  background-color: black;
+  box-shadow: 0px 7px 10px black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hexigram {
+  display: block;
+  margin: 0 auto;
+  max-height: 100px;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NavBar {
+  background-image: linear-gradient(black, #4A0364);
+  height: 40px;
+}
+ul {
+  list-style-type: none;
+  margin: -10px;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(black, #4A0364);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  display: inline;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 250px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a:hover, a:active {
+  background-color:  white;
+  color: black;
+  transition: 600ms;
+}
+
+h1 {
+  text-align: center;
+  color: #D4AF37;
+  text-shadow:  1px 1px 2px rgba(0,0,0,1),
+                  -1px -1px 2px rgba(0,0,0,1);
+}
+
+p {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0px 25px;
+  max-width: 800px;
+}
+
+form {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  background: white;
+}
+
+.madeBy {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  height: 20px;
+  background-color: black;
+  z-index: 20;
+  margin-top: 10px;
+  padding: 2px 10px 6px 0px;
+  box-shadow: 0px -7px 10px black;
 }
