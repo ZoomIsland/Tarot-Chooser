@@ -19,6 +19,7 @@
     -o-transition: 750ms;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    transform: translateZ(0);
     -webkit-transform:translateZ(0);
     box-shadow: -8px 2px 8px rgba(0,0,0,.5);
 }
@@ -40,6 +41,8 @@
     width: 100%;
     border-radius: 10px;
     background-color: white;
+    transform: translateZ(0);
+    -webkit-transform:translateZ(0);
     transition: 750ms;
     -webkit-transition: 750ms;
     -moz-transition: 750ms;
@@ -85,6 +88,8 @@
     background-image: none;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform:translateZ(0);
 }
 
 .cardBack {
@@ -101,6 +106,8 @@
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg)
+    transform: translateZ(0);
+    -webkit-transform:translateZ(0);
 }
 
 .FrontFacing:nth-child(1) {
