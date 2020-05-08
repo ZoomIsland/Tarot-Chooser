@@ -41,7 +41,7 @@ class SearchForm extends React.Component {
                     <div className="CardChoice">
                         <CardAmount handleAmountChange={this.handleAmountChange} />
                     </div>
-                    <div className="MagicButton">
+                    <div id="MagicButton" className="MagicButton">
                             <button onClick={this.onSubmit}>
                                     <h2>Show my spread</h2>
                             </button>

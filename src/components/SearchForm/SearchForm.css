@@ -76,7 +76,7 @@ form {
     justify-content: center;
     z-index: 5;
     height: 60px;
-    width: 195px;
+    width: 115%;
     box-shadow: 0px -15px 10px -9px rgba(0,0,0,0.9),
                 inset 0px 8px 8px -13px rgba(255,255,255,0.75);
     margin-top: 125px;
@@ -85,7 +85,7 @@ form {
 }
 
 #thothPocket {
-    width: 230px;
+    width: 135%;
     height: 60px;
 }
 
@@ -107,13 +107,43 @@ form {
     margin-top: 190px;
 }
 
+@media only screen and (max-width: 600px) {
+    .IndividualDeck {
+        width: 25vw;
+        margin: 10px;
+    }
+    .checkmark {
+        height: 20vw;
+    }
+    .cardPocket {
+        margin-top: 20vw;
+        height: 8vh;
+    }
+    #thothPocket {
+        height: 8vh;
+    }
+    .cardPocket h2 {
+        font-size: 16px;
+        height: 1vh;
+    }
+    .radio:hover input ~ .checkmark {
+        margin-top: -2vw;
+    }
+    .radio input:checked ~ .checkmark {
+        margin-top: -2vw;
+    }
+    .deckChoice {
+        height: 21vh;
+    }
+    .CardChoice {
+        height: 19vh;
+    }
+}
+
 .MagicButton {
     background-image: none;
     display: flex;
     justify-content: center;
-    border-radius: 6px;
-    height: 150px;
-    width: 150px;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -121,8 +151,6 @@ form {
 }
 
 .MagicButton button {
-    /* why isn't the below working?? */
-    background: linear-gradient(45deg, rgb(236, 196, 64), rgb(155, 128, 41));
     background-image: none;
     cursor: pointer;
     border: 3px solid #D4AF37;
@@ -166,4 +194,15 @@ button:focus {
     text-shadow: 1px 0px 1px #D4AF37,
                  -1px -0px 1px #D4AF37;
     z-index: 20;
+}
+
+@media only screen and (max-width: 375px) {
+    .MagicButton button {
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+    }
+    .MagicButton h2 {
+        font-size: 22px;
+    }
 }

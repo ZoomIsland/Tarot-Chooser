@@ -3,7 +3,8 @@
     position: relative;
 }
 
-.FrontFacing {
+.FrontFacing,
+.BackFacing {
     position: absolute;
     background-image: none;
     background-color: white;
@@ -19,7 +20,13 @@
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     box-shadow: -8px 2px 8px rgba(0,0,0,.5);
-    cursor: pointer;
+}
+
+.BackFacing {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
 }
 
 .cardFront {
@@ -144,26 +151,6 @@
     z-index: 10;
 }
 
-.BackFacing {
-    position: absolute;
-    height: 165px;
-    width: 115px;
-    border-radius: 10px;
-    background-color: white;
-    margin: 5px;
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transition: 750ms;
-    -webkit-transition: 750ms;
-    -moz-transition: 750ms;
-    -o-transition: 750ms;
-    transform-style: preserve-3d;
-    box-shadow: -8px 2px 8px rgba(0,0,0,.5);
-    background-image: none;
-}
-
 .BackFacing:nth-child(2) {
     margin-left: -140px;
     z-index: 9;
@@ -210,3 +197,73 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+    .FrontFacing,
+    .BackFacing {
+        width: 20vw;
+        height: 30vw;
+    }
+    .cardFront h1 {
+        font-size: 40px;
+    }
+    .cardFront p {
+        font-size: 12px;
+    }
+    .FrontFacing:nth-child(1) {
+        margin-left: -49vw;
+    }
+    .FrontFacing:nth-child(2) {
+        margin-left: -42vw;
+    }
+    .FrontFacing:nth-child(3) {
+        margin-left: -35vw;
+    }
+    .FrontFacing:nth-child(4) {
+        margin-left: -28vw;
+    }
+    .FrontFacing:nth-child(5) {
+        margin-left: -21vw;
+    }
+    .FrontFacing:nth-child(6) {
+        margin-left: -14vw;
+    }
+    .FrontFacing:nth-child(7) {
+        margin-left: -7vw;
+    }
+    .FrontFacing:nth-child(8) {
+        margin-left: 0vw;
+    }
+    .FrontFacing:nth-child(9) {
+        margin-left: 7vw;
+    }
+    .FrontFacing:nth-child(10) {
+        margin-left: 14vw;
+    }
+    .BackFacing:nth-child(2) {
+        margin-left: -28vw;
+    }
+    .BackFacing:nth-child(3) {
+        margin-left: -21vw;
+    }
+    .BackFacing:nth-child(4) {
+        margin-left: -14vw;
+    }
+    .BackFacing:nth-child(5) {
+        margin-left: -7vw;
+    }
+    .BackFacing:nth-child(6) {
+        margin-left: 0vw;
+    }
+    .BackFacing:nth-child(7) {
+        margin-left: 7vw;
+    }
+    .BackFacing:nth-child(8) {
+        margin-left: 14vw;
+    }
+    .BackFacing:nth-child(9) {
+        margin-left: 21vw;
+    }
+    .BackFacing:nth-child(10) {
+        margin-left: 28vw;
+    }
+}

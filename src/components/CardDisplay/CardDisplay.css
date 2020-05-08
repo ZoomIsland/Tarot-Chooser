@@ -1,7 +1,7 @@
 .cardName {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: center;
     background-image: none;
     border-radius: 15px;
@@ -14,23 +14,27 @@
     100% {opacity: 100}
 }
 
+.actualCardName {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: none;
+    text-align: center;
+}
+
 .actualCardName h1 {
     background-image: none;
     text-align: center;
     color: #D4AF37;
     text-shadow: 5px 0px 5px rgba(0,0,0,0.9),
                 -5px 0px 5px rgba(0,0,0,0.9);
+    width: 175px;
     animation-name: textAppear;
     animation-duration: 4s;
     animation-delay: calc(var(--animationOrder) * 1s + 2s);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0;
-}
-
-.actualCardName {
-    background-image: none;
-    text-align: center;
 }
 
 /* rework below code */

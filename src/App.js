@@ -17,7 +17,7 @@ function App() {
           <SearchForm />
         </div>
         <div className="madeBy">
-          Made by Zach Milan
+          <p>Made by Zach Milan</p>
         </div>
       </div>
     </div>

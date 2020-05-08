@@ -2,11 +2,15 @@ import React from 'react'
 import './CardDisplay.css'
 
 class CardDisplay extends React.Component {
+    componentDidMount() {
+        document.getElementById('MagicButton').scrollIntoView({behavior: "smooth"});
+    }
+
     render() {
         return (
         <div className={"cardName card_" + this.props.num}>
-            <div className={"actualCardName"}>
-            <h1 style={{"--animationOrder": this.props.num}}>{this.props.card.name}</h1>
+            <div className="actualCardName">
+                <h1 style={{"--animationOrder": this.props.num}}>{this.props.card.name}</h1>
             </div>
             <div class="displayCurtain">    
                 <div className="bottom-panel" style={{"--animationOrder": this.props.num}}>
