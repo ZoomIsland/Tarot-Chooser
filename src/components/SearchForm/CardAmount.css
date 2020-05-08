@@ -19,8 +19,7 @@
     -o-transition: 750ms;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
     box-shadow: -8px 2px 8px rgba(0,0,0,.5);
 }
 
@@ -41,8 +40,7 @@
     width: 100%;
     border-radius: 10px;
     background-color: white;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
     transition: 750ms;
     -webkit-transition: 750ms;
     -moz-transition: 750ms;
@@ -58,8 +56,7 @@
     border-radius: 10px;
     margin-left: 1px;
     pointer-events: none;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .cardFront h1 {
@@ -74,8 +71,7 @@
     margin-top: 15px;
     margin-bottom: 0px;
     pointer-events: none;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .cardFront p {
@@ -86,16 +82,14 @@
     color: #D4AF37;
     text-transform: uppercase;
     pointer-events: none;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .cardFront, .cardBack {
     background-image: none;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transform: translateZ(0);
-    -webkit-transform:translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .cardBack {
