@@ -83,6 +83,7 @@
 .cardFront, .cardBack {
     background-image: none;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .cardBack {
